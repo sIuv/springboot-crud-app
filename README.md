@@ -11,4 +11,5 @@ Update the appVersion in ./helm/app/Chart.yaml
 Deploy the kubernetes builds:
 
 > helm upgrade plinko-app ./helm/app
+
 > helm upgrade postgres ./helm/postgres
