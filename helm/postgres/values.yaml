@@ -1,0 +1,27 @@
+replicaCount: 2
+
+postgres:
+  name: postgres
+  container:
+    image: postgres:9.6-alpine
+    port: 5432
+  service:
+    type: ClusterIP
+    port: 5432
+  volume:
+    name: postgres-storage
+    kind: PersistentVolumeClaim
+    mountPath: /var/lib/postgresql/data
+    pvc:
+      name: postgres-persistent-volume-claim
+      accessMode: ReadWriteOnce
+      storage: 4Gi
+  config:
+    name: postgres-config
+    data:
+      - key: POSTGRES_DB
+        value: plinko
+      - key: POSTGRES_USER
+        value: plinko
+      - key: POSTGRES_PASSWORD
+        value: plinko

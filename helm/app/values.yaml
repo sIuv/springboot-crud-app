@@ -1,0 +1,15 @@
+app:
+  name: app
+  group: app
+  replicaCount: 1
+  container:
+    image: sIuv/plinko:0.0.1
+    pullPolicy: Never
+    port: 8080
+    config: []
+    env:
+       - key: key
+         value: value
+  service:
+    type: ClusterIP
+    port: 8080
