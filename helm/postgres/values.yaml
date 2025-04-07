@@ -3,7 +3,7 @@ replicaCount: 2
 postgres:
   name: postgres
   container:
-    image: postgres:9.6-alpine
+    image: postgres:17.4-alpine
     port: 5432
   service:
     type: ClusterIP

@@ -1,0 +1,13 @@
+ingress:
+  name: plinko-ingress
+  replicaCount: 1
+  annotations:
+    class: nginx
+  hosts:
+    - host: plinko.local
+      paths:
+        - pathType: Prefix
+          path: /api
+          backend:
+            serviceName: app
+            servicePort: 8080

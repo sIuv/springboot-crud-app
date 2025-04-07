@@ -1,5 +1,12 @@
 # springboot-crud-app
 
+Before you start it's required that you have installed:
+
+- helm
+- kubernetes
+- kubectl
+- docker
+
 Build app like so (bump the docker image version):
 
 > docker build . -t sIuv/plinko:latest -t sIuv/plinko:0.0.1

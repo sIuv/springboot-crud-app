@@ -6,6 +6,7 @@ app:
     image: sIuv/plinko:0.0.1
     pullPolicy: Never
     port: 8080
+    targetPort: 8080
     config: []
     env:
        - key: key
