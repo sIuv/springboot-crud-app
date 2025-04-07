@@ -1,7 +1,7 @@
 HELP.md
 .gradle
 build/
-postgres/
+/postgres/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
